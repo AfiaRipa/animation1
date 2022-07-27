@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width:80%;
+    height:90vh;
+    border:1px solid black;
+    margin: 1em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main{
+    width: 200px;
+    height: 200px;
+    background-color:lawngreen; 
+    position: relative;
+
+}
+/* .main:hover{
+    background-color: mediumturquoise; 
+    transform:translateX(400px);
+    transition: 2s ease-in-out 1s;
+    transition-duration: 4s;
+    transition-delay: 2s; 
+    transition-timing-function: ease-in-out;
+      } */
+
+
+
+.box{
+    width: 100px;
+    height: 100px;
+    /* background-color: salmon; */
+    position: absolute;
+    /* top: 0;
+    right:0; */
+
+}
+.box:nth-child(1){
+    background-color: red;
+    left: 0px;
+    top: 0px;
+    animation: ab 4s ease 1s infinite alternate-reverse;
+    
+} 
+.box:nth-child(2){
+    background-color:green;
+    left: 100px;
+    top: 0px;
+    animation: bc 4s ease 1s infinite alternate-reverse; 
+} 
+.main:hover .box{
+    /* background-color: blue; */
+    /* animation-name: ab;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out; */
+    /* animation-delay: 2s; */
+    /* animation-iteration-count:infinite;
+    animation-direction:alternate-reverse;
+    animation-timing-function: ease-in-out; */
+    /* animation-fill-mode:both; */
+    /* animation: ab 4s ease 1s infinite alternate-reverse; */
+} 
+
+@keyframes ab{
+    0%{background-color: brown;
+        top:0px;
+        left:0px;
+    }
+    25%{
+        background-color: lawngreen;
+        top:0px;
+        left:100px;}
+    50%{
+        background-color: azure;
+        top:100px;
+        left:100px;
+    }
+    75%{
+        background-color: green;
+        top:100px;
+        left:0px;
+    } 
+    /* 100%{background-color:greenyellow;
+    top:0;
+    left:0;
+    } */
+}
+/* @keyframes change {
+    from{transform: translateX(10%)}
+    to{transform: translateX(100%)}    
+} */
+@keyframes bc{
+0%{background-color: brown;
+    top:0px;
+    left:100px;
+}
+25%{
+    background-color: lawngreen;
+    top:100px;
+    left:100px;
+}
+50%{
+    background-color: azure;
+    top:100px;
+    left:0px;
+}
+75%{
+    background-color: green;
+    top:0px;
+    left:0px;
+} 
+100%{
+    background-color: brown;
+    top: 0px;
+    left: 100px;
+}
+}
+
+

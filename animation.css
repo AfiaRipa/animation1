@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width:80%;
+    height:90vh;
+    border:1px solid black;
+    margin: 1em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    width: 200px;
+    height: 200px;
+    /* background-color:rgb(97, 0, 252);  */
+    position: relative;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    border-radius: 1pc;
+    position: absolute;;
+}
+.box:nth-child(1){
+    background-color: red;
+    left: 0px;
+    top: 0px;
+    animation: box1 8s ease-in 1s infinite forwards;
+}
+.box:nth-child(2){
+    background-color:green;
+    left: 100px;
+    top: 0px;
+    animation: box2 8s ease-in 1s infinite forwards;
+}
+.box:nth-child(3){
+    background-color: blue;
+    left: 100px;
+    top: 100px;
+    animation: box3 8s ease-in 1s infinite forwards;
+}
+.box:nth-child(4){
+    background-color: cadetblue;
+    left: 0px;
+    top: 100px;
+    animation: box4 8s ease-in 1s infinite forwards;
+} 
+/* .main:hover .box{
+    transition: 2s ease-in-out;
+    transform: translateX(100%);
+    background-color: rgb(173, 201, 19);
+} */
+@keyframes box1{
+    0%{background-color: brown;
+        top:0px;
+        left:0px;
+    }
+    25%{
+        background-color: lawngreen;
+        top:0px;
+        left:100px;}
+    50%{
+        background-color: rgb(9, 224, 224);
+        top:100px;
+        left:100px;
+    }
+    75%{
+        background-color: green;
+        top:100px;
+        left:0px;
+    } 
+}
+@keyframes box2{
+    0%{
+        background-color: rgb(55, 13, 110);
+        top: 0px;
+        left: 100px;
+    }
+    25%{
+        background-color: rgb(45, 152, 160);
+        top: 100px;
+        left: 100px;
+    }
+    50%{
+        background-color: rgb(205, 117, 90);
+        top: 100px;
+        left: 0px;
+    }
+    75%{
+        background-color:rgb(205, 50, 50);
+        top: 0px;
+        left: 0px;
+    }
+}
+@keyframes box3{
+    0%{
+        background-color: rgb(38, 126, 76);
+        top: 100px;
+        left: 100px;
+    }
+    25%{
+        background-color: sienna;
+        top: 100px;
+        left: 0px;
+    }
+    50%{
+        background-color: slateblue;
+        top: 0px;
+        left: 0px;
+    }
+    75%{
+        background-color:yellowgreen;
+        top: 0px;
+        left: 100px;
+    }
+}
+@keyframes box4{
+    0%{
+        background-color: seagreen;
+        top: 100px;
+        left: 0px;
+    }
+    25%{
+        background-color: rgb(160, 45, 122);
+        top: 0px;
+        left: 0px;
+    }
+    50%{
+        background-color: rgb(218, 20, 20);
+        top: 0px;
+        left: 100px;
+    }
+    75%{
+        background-color:rgb(50, 117, 205);
+        top: 100px;
+        left: 100px;
+    }
+}
